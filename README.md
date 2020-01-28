@@ -14,3 +14,25 @@ $ pip3 install SQLAlchemy
 $ pip3 install databases[postgresql]
 $ pip3 freeze > requirements.txt
 ```
+
+## Requirements
+- Python3
+- pip3
+- makefile
+
+## Build / Test / Run
+```bash
+
+$ make test
+
+$ make docker-build
+
+$ make docker-run
+
+$ make freeze
+
+$ make run
+
+$ make run-dev
+
+```
