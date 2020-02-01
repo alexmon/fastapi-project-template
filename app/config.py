@@ -11,5 +11,5 @@ env: Dict[str, any] = {
     "DB_USER": os.getenv("DB_USER", "postgres"),
     "DB_PASSWORD": os.getenv("DB_PASSWORD", "postgres"),
     "DB_NAME": os.getenv("DB_NAME", "postgres"),
-    "LOG_LEVEL": os.getenv("LOG_LEVEL", logging.DEBUG)
+    "LOG_LEVEL": int(os.getenv("LOG_LEVEL", logging.DEBUG))
 }

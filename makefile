@@ -2,6 +2,9 @@
 test:
 	pytest -v ./test
 
+db-up:
+	python3 -m app.services.migrate up
+
 docker-build:
 	docker build --rm -t fastapi-proj .
 
