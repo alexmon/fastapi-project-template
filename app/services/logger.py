@@ -1,8 +1,10 @@
-# app.services.logger
+'''
+app.services.logger
+'''
 
 from typing import List
-from app.config import env
 import logging
+from app.config import env
 
 logger = logging.getLogger('application-logger')
 logger.setLevel(env['LOG_LEVEL'])

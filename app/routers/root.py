@@ -1,4 +1,6 @@
-# app.routers.root
+'''
+app.routers.root
+'''
 
 from fastapi import APIRouter
 

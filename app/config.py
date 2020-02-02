@@ -1,9 +1,11 @@
-# app.config
+'''
+app.config
+'''
 
-import os
-from dotenv import load_dotenv
 from typing import Dict
+import os
 import logging
+from dotenv import load_dotenv
 
 load_dotenv()
 

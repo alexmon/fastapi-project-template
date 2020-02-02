@@ -1,4 +1,6 @@
-# app.models.base
+'''
+app.models.base
+'''
 
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, DateTime, func

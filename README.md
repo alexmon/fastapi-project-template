@@ -5,6 +5,7 @@ $ easy_install-3.7 virtualenv
 $ virtualenv -p python3 env
 $ virtualenv -p python3 venv
 $ source venv/bin/activate
+$ pip3 install pylint
 $ pip3 install fastapi
 $ pip3 install uvicorn
 $ pip3 install email-validator
@@ -24,7 +25,9 @@ $ pip3 freeze > requirements.txt
 ## Build / Test / Run
 ```bash
 
-$ make test
+$ make tests
+
+$ make lint
 
 $ make migrate
 
@@ -39,3 +42,6 @@ $ make run
 $ make run-dev
 
 ```
+
+## View OpenAPI docs
+http://localhost:8000/docs

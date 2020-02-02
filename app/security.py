@@ -1,4 +1,6 @@
-# app.security
+'''
+app.security
+'''
 
 from fastapi.security import OAuth2PasswordBearer
 

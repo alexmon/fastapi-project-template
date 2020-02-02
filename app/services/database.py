@@ -1,9 +1,11 @@
-# app.services.database
+'''
+app.services.database
+'''
 
+import typing
 import databases
 import sqlalchemy
 from sqlalchemy.orm import sessionmaker
-from typing import List
 from app.config import env
 
 DATABASE_URL = "postgresql://{}:{}@{}:{}/{}".format(

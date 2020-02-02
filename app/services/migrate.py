@@ -1,4 +1,6 @@
-# app.services.migrate
+'''
+app.services.migrate
+'''
 
 import sys
 from .database import engine
@@ -13,3 +15,4 @@ if __name__ == "__main__":
         logger.debug('starting database migration')
         migrate()
         logger.debug('ending database migration')
+

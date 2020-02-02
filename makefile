@@ -1,6 +1,9 @@
 
-test:
-	pytest -v ./test
+tests:
+	pytest -v .
+
+lint:
+	pylint ./app	
 
 migrate:
 	python3 -m app.services.migrate up
