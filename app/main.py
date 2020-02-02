@@ -1,6 +1,7 @@
 from fastapi import FastAPI
-from app.services.database import database
-from app.services.logger import logger
+from .services.database import database
+from .services.logger import logger
+from .routers import root, users
 
 app = FastAPI(
     title="FastAPI-Proj",
@@ -16,7 +17,9 @@ async def startup():
 async def shutdown():
     await database.disconnect()
 
-@app.get("/")
-def read_root():
-    logger.debug("GET /");
-    return {"status": "OK"}
+app.include_router(root.router)
+app.include_router(
+    users.router,
+    prefix="/users",
+    tags=["users"]
+)

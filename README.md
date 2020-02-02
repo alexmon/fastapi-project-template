@@ -12,6 +12,7 @@ $ pip3 install python-dotenv
 $ pip3 install pytest
 $ pip3 install SQLAlchemy
 $ pip3 install databases[postgresql]
+$ pip3 install python-multipart
 $ pip3 freeze > requirements.txt
 ```
 
@@ -24,6 +25,8 @@ $ pip3 freeze > requirements.txt
 ```bash
 
 $ make test
+
+$ make migrate
 
 $ make docker-build
 

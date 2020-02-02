@@ -1,6 +1,6 @@
 import sys
-from app.services.database import engine
-from app.services.logger import logger
+from .database import engine
+from .logger import logger
 from app.models.user import User
 
 def migrate():

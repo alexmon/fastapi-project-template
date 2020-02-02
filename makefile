@@ -2,7 +2,7 @@
 test:
 	pytest -v ./test
 
-db-up:
+migrate:
 	python3 -m app.services.migrate up
 
 docker-build:
