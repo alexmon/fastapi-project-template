@@ -1,5 +1,6 @@
 import databases
 import sqlalchemy
+from sqlalchemy.orm import sessionmaker
 from typing import List
 from app.config import env
 
@@ -16,3 +17,7 @@ database = databases.Database(DATABASE_URL)
 engine = sqlalchemy.create_engine(
     DATABASE_URL, connect_args={}
 )
+
+Session = sessionmaker(bind=engine)
+
+session = Session()
