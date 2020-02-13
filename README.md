@@ -14,6 +14,7 @@ $ pip3 install pytest
 $ pip3 install SQLAlchemy
 $ pip3 install databases[postgresql]
 $ pip3 install python-multipart
+$ pip3 install passlib[bcrypt]
 $ pip3 freeze > requirements.txt
 ```
 
